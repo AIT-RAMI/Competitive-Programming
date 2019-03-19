@@ -7,7 +7,10 @@ public class Main {
         int b = S.nextInt();
         int d = b/a;
         int result = 0;
-        if ( (b%a != 0 || (d%2 !=0 && d%3 != 0)&& d != 1 )) {
+        if (d == 1) {
+            System.out.println(0);
+        } 
+        if ( b%a != 0 || (d%2 !=0 && d%3 != 0)) {
             System.out.println(-1);
         } else {
             while ( d%2 == 0) {
