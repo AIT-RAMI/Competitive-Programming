@@ -5,6 +5,7 @@ public class Main {
         Scanner S = new Scanner(System.in);
         int a = S.nextInt();
         int b = S.nextInt();
+
         if (b % a != 0) {
             System.out.println(-1);
         } else {
