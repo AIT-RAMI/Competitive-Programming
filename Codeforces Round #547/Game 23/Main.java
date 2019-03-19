@@ -6,7 +6,7 @@ public class Main {
         int a = S.nextInt();
         int b = S.nextInt();
 
-        if (b % a != 0) {
+        if (b % a != 0 || a > b) {
             System.out.println(-1);
         } else {
             int d = b/a;
