@@ -10,7 +10,7 @@ public class Main {
         if (d == 1) {
             System.out.println(0);
         } 
-        if ( b%a != 0 || (d%2 !=0 && d%3 != 0)) {
+        else if ( b%a != 0 || (d%2 !=0 && d%3 != 0)) {
             System.out.println(-1);
         } else {
             while ( d%2 == 0) {
