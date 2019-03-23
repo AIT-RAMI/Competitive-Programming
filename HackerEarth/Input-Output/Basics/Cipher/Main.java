@@ -44,7 +44,7 @@ public class Main {
         FastReader S = new FastReader();
         String message = S.next();
         int key = S.nextInt();
-        StringBuilder crypted = new StringBuilder();
+        StringBuilder encrypted = new StringBuilder();
         for (char m : message.toCharArray()) {
             int a = (int) m;
             if (a > 64 && a < 91) {
@@ -58,8 +58,8 @@ public class Main {
                 if (a > 57 && a < 65) a -= 10;
             }
             m = (char) a;
-            crypted.append(m);
+            encrypted.append(m);
         }
-        System.out.println(crypted);
+        System.out.println(encrypted);
     }
 }
