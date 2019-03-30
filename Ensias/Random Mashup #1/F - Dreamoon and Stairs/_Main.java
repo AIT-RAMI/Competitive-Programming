@@ -43,36 +43,25 @@ public class _Main {
     public static void main(String[] args) {
         FastReader S = new FastReader();
         int n = S.nextInt();
-        int k = S.nextInt();
-        int []w = new int[n];
-        for (int i = 0; i < n; i++){
-            w[i] = S.nextInt();
-        }
-        int []c = new int[n];
-        for (int i = 0; i < n; i++){
-            c[i] = 0;
-        }
-        int days = 0;
-        boolean used = true;
-        while (true) {
-            days += 1;
-            for (int i = 0; i < n; i++){
-                if (c[i] < w[i]) {
-                    c[i] += k;
+        int m = S.nextInt();
+        int min = n / 2;
+        if (n % 2 == 0) {
+            while (min % m != 0 && min <= n) {
+                min += 1;
+                if (min % m == 0) {
                     break;
                 }
             }
-            for (int i = 0; i < n; i++){
-                if (c[i] < w[i]) {
-                    c[i] += k;
+        } else {
+            do {
+                min += 1;
+                if (min % m == 0) {
                     break;
                 }
-                if (i == n - 1) {
-                    used = false;
-                }
-            }
-            if (!used) break;
+            } while (min % m != 0 && min <= n);
         }
-        System.out.println(days);
+
+        if (min <= n) System.out.println(min);
+        else System.out.println(-1);
     }
 }
