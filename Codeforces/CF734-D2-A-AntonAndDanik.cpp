@@ -22,16 +22,16 @@ const int MAXN = 100005;
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    int n, a;
+    int n, a = 0;
     string s;
     sf(n);
     sf(s);
     in(i, n){
         if(s[i] == 'A') a++;
     }
-    if(a > n - a) pf("Anton");
-    else ("Danik")
-
+    if (a == n - a) pf("Friendship");
+    else if(a > n - a) pf("Anton");
+    else pf("Danik");
 
     return 0;
 }
