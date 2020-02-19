@@ -25,6 +25,5 @@ int main() {
     ll n, m, a;
     cin >> n >> m >> a;
     cout << fixed << (ll) (ceil((double) n / a) * ceil((double) m / a));
-
     return 0;
 }
