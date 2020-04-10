@@ -29,5 +29,6 @@ int main() {
         if(x % 2 == 0) p ^= 1;
         pf(p + 1);
     }
+	
     return 0;
 }
