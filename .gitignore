@@ -6,3 +6,4 @@
 *.exe
 in
 out
+test.cpp
