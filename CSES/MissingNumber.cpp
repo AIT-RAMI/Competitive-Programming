@@ -6,7 +6,7 @@ using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
 const ll mod = 1000000007;
-
+ 
 #define pf(n) cout << n << endl
 #define pfs(n) cout << n
 #define ps() cout << " "
@@ -18,7 +18,7 @@ const ll mod = 1000000007;
 #define vs vector<string>
 const int MAXN = 100005;
 /**  '' "Lionel VB" ^ **/
-
+ 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
