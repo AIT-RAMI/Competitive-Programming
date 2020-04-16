@@ -22,8 +22,10 @@ const int MAXN = 100005;
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-
-
-
+    ll n;
+    cin >> n;
+    for(ll i = 1; i <= n; i++){        
+        pf((i*i*(i*i-1)-(8+24+16*(i-4)+16+24*(i-4)+(i-4)*(i-4)*8))/2);
+    }
     return 0;
 }
