@@ -25,10 +25,10 @@ int main() {
     int n;
     cin >> n;
     int ans;
-    int fives = 5;
-    for(int i = 1; i <= 12; i++){
-        ans += n/fives;
-        fives *= 5;
+    int k = 5;
+    while(k < n){
+        ans += n/k;
+        k *= 5;
     }
     cout << ans;
     return 0;
