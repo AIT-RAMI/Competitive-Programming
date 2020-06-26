@@ -1,3 +1,3 @@
 # Codeforces Solutions
 
-This repositry contains my solutions to codeforces.com problems
+This repository contains my solutions to codeforces.com problems
